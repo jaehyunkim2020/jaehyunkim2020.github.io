@@ -229,6 +229,34 @@ footer .social img {
     grid-template-columns: repeat(10, 1fr);
 }
 
+/* Rates Page CSS */
+#FAQ-img {
+    width: 100%;
+}
+
+#FAQ {
+    background-color: #3B6064;
+}
+
+.FAQ-title {
+    text-align: center;
+    color: white;
+}
+
+.QA li {
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.QA p {
+    font-size: 1rem;
+    font-weight: light;
+    padding: 15px;
+}
+
+
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -281,4 +309,3 @@ footer {
     margin-top: 25px;
 }
 
-}
