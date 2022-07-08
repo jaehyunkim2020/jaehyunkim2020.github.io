@@ -6,6 +6,10 @@
     margin: 0 auto;
 }
 
+.logo {
+    width: 80px;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -33,10 +37,6 @@ main section {
 
 main section img {
     box-sizing: border-box;
-}
-
-#background {
-    height: 725px;
 }
 
 body {
@@ -72,27 +72,6 @@ header {
     color: white;
 }
 
-#background {
-    background-color: #55828B;
-    grid-column: 1/11;
-    grid-row: 4/9;
-}
-
-.msg {
-    background-color: white;
-    line-height: 1.5em;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px black;
-}
-
-.msg p {
-    color: black;
-    font-size: .8em;
-    padding-bottom: 15px;
-}
-
 .home-title {
     color: white;
     font-family: 'Mochiy Pop One', Koulen, sans-serif;
@@ -102,49 +81,6 @@ header {
 
 .h4 {
     color: black;
-}
-
-.msg h2 {
-    color: black;
-    font-family: 'Mochiy Pop One';
-}
-
-footer {
-    background-color: #87BBA2;
-    padding: 25px 50px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer h3 {
-    color: black;
-    text-decoration: underline;
-}
-
-footer a {
-    color: #3B6064;
-    text-decoration: none;
-}
-
-footer a:hover {
-    background-color: #3B6064;
-    color: white;
-    text-decoration: underline;
-}
-
-footer .social img {
-    padding-top: 15px;
-}
-
-.icon {
-    width: 80px;
-    padding-top: 10px;
-}
-
-.logo {
-    width: 80px;
 }
 
 #hero {
@@ -211,9 +147,28 @@ footer .social img {
     box-shadow: 5px 5px 10px black;
 }
 
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
+}
+
+.home-grid {
+    margin: 200px 0;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#background {
+    height: 725px;
+    background-color: #55828B;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 
 .mountains {
@@ -223,10 +178,53 @@ footer .social img {
     box-shadow: 5px 5px 10px black;
 }
 
-.home-grid {
-    margin: 200px 0;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.msg {
+    background-color: white;
+    line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px black;
+}
+
+.msg p {
+    color: black;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+.msg h2 {
+    color: black;
+    font-family: 'Mochiy Pop One';
+}
+
+footer {
+    background-color: #87BBA2;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3 {
+    color: black;
+    text-decoration: underline;
+}
+
+footer a {
+    color: #3B6064;
+    text-decoration: none;
+}
+
+footer a:hover {
+    background-color: #3B6064;
+    color: white;
+    text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
 
 /* Rates Page CSS */
@@ -308,4 +306,3 @@ nav a {
 footer {
     margin-top: 25px;
 }
-
