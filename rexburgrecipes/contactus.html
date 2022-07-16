@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RexburgRecipes | Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contactus.css">
     <style>
         form {
             margin: 0 auto;
-            width: 500px;
+            width: 50%;
             padding: 1em;
             border: 1px solid #CCC;
             border-radius: 1em;
@@ -27,16 +27,17 @@
 
         label {
             display: inline-block;
-            width: 130px;
-            text-align: right;
+            width: 300px;
+            
         }
 
         input,
         textarea {
-            font: 1em sans-serif;
-            width: 350px;
+            font: 0.8em sans-serif;
+            width: 100%;
             box-sizing: border-box;
             border: 1px solid #999;
+            border-radius: 5px;
         }
 
         input:focus,
@@ -49,12 +50,18 @@
             height: 5em;
         }
 
-        .button {
-            padding-left: 110px;
+        button {
+            background-color: #157A6E;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
         }
 
-        button {
-            margin-left: 2em;
+        button:hover {
+        opacity: 0.8;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
         }
 
         #feedback {
@@ -71,13 +78,17 @@
             margin-top: 3em;
         }
 
+        h1, h2{
+            text-align: center;
+        }
+
     </style>
 </head>
 <body>
     <div id="content">
         <header>
             <a href="index.html" id="logo_link">
-                <img class="logo" src="images/logo.png" alt="Dry Oar Logo">
+                <img class="logo-img" src="images/logo.png" alt="RexburgRecipes Logo">
             </a>
             <nav>
                 <a href="index.html">Home</a>
@@ -86,7 +97,7 @@
             </nav>
         </header>
         <div id="FAQ">
-            <h1 class="FAQ-title">Contact Us</h1>
+            <h1>Contact Us</h1>
         </div>
         <main>
             <div id="feedback"></div>
@@ -94,15 +105,15 @@
                 <ul>
                     <li>
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="user_name">
+                        <input type="text" placeholder="Enter name" id="name" name="user_name">
                     </li>
                     <li>
                         <label for="mail">E-mail:</label>
-                        <input type="email" id="mail" name="user_email">
+                        <input type="email" placeholder="Enter E-mail" id="mail" name="user_email">
                     </li>
                     <li>
                         <label for="msg">Message:</label>
-                        <textarea id="msg" name="user_message"></textarea>
+                        <textarea id="msg" placeholder="Enter message" name="user_message"></textarea>
                     </li>
                     <li class="button">
                         <button type="submit">Send your message</button>
